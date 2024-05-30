@@ -25,12 +25,12 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Library</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Template.html">Library</a></li>
         </ul>
 
         <ul>
-            <li><a href="Home.html">Settings</a></li>
+            <li><a href="Dashboard.html">Settings</a></li>
         </ul>
     </div>
 
@@ -49,15 +49,15 @@
                 <div class="component">
                     <div class="components">
                         <h1>Login button</h1>
-                        <div class="login-button"><h2>Login</h2></div>
+                        <div class="login-button" id="drag1" draggable="true" ondragstart="drag(event)"><h2>Login</h2></div>
                     </div>
                     <div class="components">
                         <h1>Sign up button</h1>
-                        <div class="sign-button"><h2>Sign</h2></div>
+                        <div class="sign-button" id="drag2" draggable="true" ondragstart="drag(event)"><h2>Sign</h2></div>
                     </div>
                     <div class="components">
                         <h1>Text bar</h1>
-                        <div class="text-bar"></div>
+                        <div class="text-bar" id="drag3" draggable="true" ondragstart="drag(event)"></div>
                     </div>
                 </div>
             </div>
@@ -65,9 +65,11 @@
         
 
         <div class="isi">
-            <div class="canva"></div>
+            <div class="canva" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </div>
     </div>
 
+
+    <script src="JS/Editor.Js"></script>
 </body>
 </html>

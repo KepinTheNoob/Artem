@@ -6,33 +6,40 @@
     <title>Login</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/Login.css">
+    <link rel="stylesheet" href="CSS/Login.css">
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="Home.html"><div class="logo">
-        <img src="images/Logo.png" alt="logo">
-        <h1>Artem</h1>
+    <a href="Home.html">
+        <div class="logo">
+            <h1>ARTEM</h1>
     </div></a>
 
     <div class="login">
         <h1>Login</h1>
-        <form action="{{ route('login') }}" method="POST">
-            @csrf
-            <input type="email" name="email" id="email" placeholder="Username/Email" required>
-            <input type="password" name="password" id="password" placeholder="Password" required>
+        <form action="">
+            <div class="email">
+                <input type="email" name="" id="email" placeholder="Username/Email">
+                <p id="error-email" class="error-message"></p>
+            </div>
+            
+            <div class="pass">
+                <input type="password" name="" id="pass" placeholder="Password">
+                <p id="error-pass" class="error-message"></p>
+            </div>
+            
 
             <div class="remember">
-                <div class="kotak"></div>
+                <input type="checkbox" name="" id="">
 
                 <h2>Remember Me</h2>
             </div>
 
-            <button type="submit" class="log-but">Login</button>
+            <button type="submit" class="log-but" id="log">Login</button>
         </form>
         
 
@@ -43,10 +50,11 @@
         </div>
 
         <button class="google">
-            <img src="images/google-exe.png" alt="">
+            <img src="images/google.png" alt="">
             <h4>Login with Google</h4>
         </button>
     </div>
     
+    <script src="JS/Login.js"></script>
 </body>
 </html>

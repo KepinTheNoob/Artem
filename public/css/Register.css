@@ -13,18 +13,17 @@ body{
 }
 
 .logo{
-    display: flex;
-    gap: 16.82px;
-    align-items: center;
     position: absolute;
     top: 26.06px;
     left: 51.05px;
 }
 
 .logo h1{
-    color: black;
-    font-weight: 400;
-    font-size: 32px;
+    text-decoration: none;
+    color: #B5EAEB;
+    font-family: "Notable", sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
 }
 
 .wrapping{
@@ -34,12 +33,17 @@ body{
     min-height: 100vh;
 }
 
+.register-input{
+    margin-bottom: 20.48px;
+}
+
 .background-regis{
     width: 40%;
-    background-color: #D9D9D9;
+    background-color: #3A5366;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-right: solid grey 3px;
 }
 
 .Register{
@@ -52,6 +56,7 @@ body{
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 40.76px;
+    color: white;
 }
 
 .Register input{
@@ -59,14 +64,14 @@ body{
     background-color: transparent;
     padding: 20.66px 9.31px;
     outline: none;
-    border: solid black 1.5px;
+    border: solid white 1.5px;
     border-radius: 12px;
     font-size: 16px;
-    margin-bottom: 20.48px;
 }
 
 .Register input::placeholder{
     font-size: 16px;
+    color: white;
 }
 
 .remember{
@@ -78,24 +83,27 @@ body{
     cursor: pointer;
 }
 
+.remember input{
+    width: 17.19px;
+    height: 17.19px;
+    border: solid white 1.4px;
+    background-color: transparent;
+}
+
 .remember h2{
     font-size: 13px;
     font-weight: 300;
-}
-
-.kotak{
-    width: 17.19px;
-    height: 17.19px;
-    border: solid black 1.4px;
+    color: white;
 }
 
 .Register button{
     width: 100%;
     background-color: transparent;
-    border: solid black 1.5px;
+    border: solid white 1.5px;
     border-radius: 13px;
     cursor: pointer;
     font-weight: 500;
+    color: white;
 }
 
 .log-but{
@@ -120,6 +128,7 @@ body{
     justify-content: space-between;
     margin-top: 13.23px;
     margin-bottom: 13.23px;
+    color: white;
 }
 
 .or ul{
@@ -145,8 +154,8 @@ body{
 }
 
 .picture{
-    flex: 1;
-    background-image: url('../images/Register-pic.png');
+    flex-grow: 1;
+    background-image: url('../images/register-jer.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -154,4 +163,11 @@ body{
 
 .picture img{
     height: 100vh;
+}
+
+.error-message{
+    color: red;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 12px;
 }
